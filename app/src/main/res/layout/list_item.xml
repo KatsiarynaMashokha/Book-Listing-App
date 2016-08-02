@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headers_linear_layout"
+        style="@style/ListItemParentLayout"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            style="@style/ListItemHeader"
+            android:text="@string/book_title" />
+
+        <TextView
+            style="@style/ListItemHeader"
+            android:text="@string/author" />
+
+        <TextView
+            style="@style/ListItemHeader"
+            android:text="@string/publisher" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ListItemParentLayout"
+        android:layout_below="@id/headers_linear_layout">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/RetrievedItemStyle"
+            tools:text="Physics" />
+
+        <TextView
+            android:id="@+id/author"
+            style="@style/RetrievedItemStyle"
+            tools:text="John Black" />
+
+        <TextView
+            android:id="@+id/publisher"
+            style="@style/RetrievedItemStyle"
+            tools:text="Cengage Learning" />
+
+    </LinearLayout>
+</RelativeLayout>
